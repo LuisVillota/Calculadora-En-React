@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    margin: 0;
+  }
+  
+  .ContenedorCalculadora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .Calculadora {
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f5f5f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Pantalla {
+    display: flex;
+    flex-direction: column;
+    background: #444;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .Entrada {
+    background: #444;
+    color: white;
+    border: none;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .Resultado {
+    text-align: right;
+    font-size: 24px;
+  }
+  
+  .Botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .Boton {
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .Boton:hover {
+    background: #555;
+  }
+  
+  .Operador {
+    background: #ff5722;
+  }
+  
+  .Operador:hover {
+    background: #e64a19;
+  }
+  
+  .Limpiar {
+    grid-column: span 4;
+    background: #ff5722;
+  }
+  
+  .Limpiar:hover {
+    background: #e64a19;
+  }
+  
